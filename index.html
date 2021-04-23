@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+			background-image: url("mars.gif");
+			background-position: center;
+			background-size: cover;
+		}
+
+		#myCanvas {
+			border-width: 10px;
+			background-color: white;
+			border-style: ridge;
+		}
+
+		h1,
+		h2,
+		h4 {
+			color: white !important;
+		}
+
+		#game_status {
+			color: blue !important;
+		}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Moving Rover On</title>
+</head>
+
+<body onload="add()">
+	<center>
+		<h1>Car Racing</h1>
+		<br><br>
+		<h2>Game Status: <span id="game_status"></span>
+		</h2>
+		<br>
+		<canvas id="myCanvas" width="800" height="600"></canvas>
+
+		<h4>Use The Up,Right,Left,Down keys To Move The White Car</h4>
+		<br><br>
+		<h4>Use The W,D,A,S keys To Move The White Car</h4>
+
+		<h4>
+			<b class="text-danger">NOTE : </b> IF The Cars Are NOT VISIABLE PRESS ANY ARROW KEY
+		</h4>
+	</center>
+	<script src="main.js">
+	</script>
+</body>
+
+</html>
